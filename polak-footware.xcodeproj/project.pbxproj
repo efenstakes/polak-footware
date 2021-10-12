@@ -14,6 +14,7 @@
 		CE46DDC827160DD50042B907 /* polak_footwareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE46DDC727160DD50042B907 /* polak_footwareTests.swift */; };
 		CE46DDD227160DD50042B907 /* polak_footwareUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE46DDD127160DD50042B907 /* polak_footwareUITests.swift */; };
 		CE46DDD427160DD50042B907 /* polak_footwareUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE46DDD327160DD50042B907 /* polak_footwareUITestsLaunchTests.swift */; };
+		CE46DDE227160E290042B907 /* AppBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE46DDE127160E290042B907 /* AppBarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		CE46DDCD27160DD50042B907 /* polak-footwareUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "polak-footwareUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE46DDD127160DD50042B907 /* polak_footwareUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = polak_footwareUITests.swift; sourceTree = "<group>"; };
 		CE46DDD327160DD50042B907 /* polak_footwareUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = polak_footwareUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CE46DDE127160E290042B907 /* AppBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 		CE46DDB527160DD00042B907 /* polak-footware */ = {
 			isa = PBXGroup;
 			children = (
+				CE46DDE027160E0B0042B907 /* SubViews */,
 				CE46DDB627160DD00042B907 /* polak_footwareApp.swift */,
 				CE46DDB827160DD00042B907 /* ContentView.swift */,
 				CE46DDBA27160DD40042B907 /* Assets.xcassets */,
@@ -125,6 +128,14 @@
 				CE46DDD327160DD50042B907 /* polak_footwareUITestsLaunchTests.swift */,
 			);
 			path = "polak-footwareUITests";
+			sourceTree = "<group>";
+		};
+		CE46DDE027160E0B0042B907 /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				CE46DDE127160E290042B907 /* AppBarView.swift */,
+			);
+			path = SubViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +270,7 @@
 			files = (
 				CE46DDB927160DD00042B907 /* ContentView.swift in Sources */,
 				CE46DDB727160DD00042B907 /* polak_footwareApp.swift in Sources */,
+				CE46DDE227160E290042B907 /* AppBarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
