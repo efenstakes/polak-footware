@@ -58,7 +58,7 @@ struct ProductCardView: View {
         .background(
             Color.gray.opacity(0.9)
         )
-        .cornerRadius(10)
+        .cornerRadius(16)
         .padding()
         
     }
