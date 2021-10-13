@@ -20,63 +20,63 @@ var products: [Product] = [
     
     Product(
         name: "Nike 2017 Blazer",
-        price: 2000,
+        price: 900,
         image: "1",
         isFavorite: true
     ),
     
     Product(
         name: "Nike 2017 Blazer",
-        price: 2000,
+        price: 210,
         image: "2",
         isFavorite: true
     ),
     
     Product(
         name: "Nike 2017 Blazer",
-        price: 2000,
+        price: 400,
         image: "3",
         isFavorite: true
     ),
     
     Product(
         name: "Nike 2017 Blazer",
-        price: 2000,
+        price: 450,
         image: "4",
         isFavorite: true
     ),
     
     Product(
         name: "Nike 2017 Blazer",
-        price: 2000,
+        price: 500,
         image: "5",
         isFavorite: true
     ),
     
     Product(
         name: "Nike 2017 Blazer",
-        price: 2000,
+        price: 300,
         image: "6",
         isFavorite: true
     ),
     
     Product(
         name: "Nike 2017 Blazer",
-        price: 2700,
+        price: 270,
         image: "7",
         isFavorite: true
     ),
     
     Product(
         name: "Nike 2017 Blazer",
-        price: 2000,
+        price: 200,
         image: "8",
         isFavorite: true
     ),
     
     Product(
         name: "Nike 2017 Blazer",
-        price: 2000,
+        price: 700,
         image: "9",
         isFavorite: true
     ),
