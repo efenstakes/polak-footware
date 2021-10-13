@@ -15,7 +15,14 @@ struct ContentView: View {
             // app bar
             AppBarView()
             
+            // title & filter
             
+            
+            
+            // list of products
+            ForEach (products) { product in
+               ProductCardView(product: product)
+            }
             
             
         }

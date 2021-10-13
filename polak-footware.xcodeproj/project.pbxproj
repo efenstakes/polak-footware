@@ -15,6 +15,8 @@
 		CE46DDD227160DD50042B907 /* polak_footwareUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE46DDD127160DD50042B907 /* polak_footwareUITests.swift */; };
 		CE46DDD427160DD50042B907 /* polak_footwareUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE46DDD327160DD50042B907 /* polak_footwareUITestsLaunchTests.swift */; };
 		CE46DDE227160E290042B907 /* AppBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE46DDE127160E290042B907 /* AppBarView.swift */; };
+		CE5ED43A2716FE6C0034BEB4 /* product.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5ED4392716FE6C0034BEB4 /* product.swift */; };
+		CE5ED43C271715EA0034BEB4 /* ProductCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5ED43B271715EA0034BEB4 /* ProductCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		CE46DDD127160DD50042B907 /* polak_footwareUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = polak_footwareUITests.swift; sourceTree = "<group>"; };
 		CE46DDD327160DD50042B907 /* polak_footwareUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = polak_footwareUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CE46DDE127160E290042B907 /* AppBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBarView.swift; sourceTree = "<group>"; };
+		CE5ED4392716FE6C0034BEB4 /* product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = product.swift; sourceTree = "<group>"; };
+		CE5ED43B271715EA0034BEB4 /* ProductCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,7 @@
 		CE46DDB527160DD00042B907 /* polak-footware */ = {
 			isa = PBXGroup;
 			children = (
+				CE5ED4382716FE580034BEB4 /* Models */,
 				CE46DDE027160E0B0042B907 /* SubViews */,
 				CE46DDB627160DD00042B907 /* polak_footwareApp.swift */,
 				CE46DDB827160DD00042B907 /* ContentView.swift */,
@@ -134,8 +139,17 @@
 			isa = PBXGroup;
 			children = (
 				CE46DDE127160E290042B907 /* AppBarView.swift */,
+				CE5ED43B271715EA0034BEB4 /* ProductCardView.swift */,
 			);
 			path = SubViews;
+			sourceTree = "<group>";
+		};
+		CE5ED4382716FE580034BEB4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CE5ED4392716FE6C0034BEB4 /* product.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,8 +283,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE46DDB927160DD00042B907 /* ContentView.swift in Sources */,
+				CE5ED43A2716FE6C0034BEB4 /* product.swift in Sources */,
 				CE46DDB727160DD00042B907 /* polak_footwareApp.swift in Sources */,
 				CE46DDE227160E290042B907 /* AppBarView.swift in Sources */,
+				CE5ED43C271715EA0034BEB4 /* ProductCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
