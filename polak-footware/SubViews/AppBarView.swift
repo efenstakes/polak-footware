@@ -34,7 +34,7 @@ struct AppBarView: View {
                 .padding(10)
                 .foregroundColor(.white)
                 .background(
-                    Circle().fill(.black)
+                    Circle().fill(.black.opacity(0.6))
                 )
                 .clipShape(Circle())
             
