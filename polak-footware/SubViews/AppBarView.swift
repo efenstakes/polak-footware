@@ -12,10 +12,10 @@ struct AppBarView: View {
      
         HStack(alignment: .center, spacing: 20) {
             
-            Image(systemName: "house")
+            Image(systemName: "line.3.horizontal")
                 .resizable()
                 .scaledToFit()
-                .frame(width: 32, height: 20, alignment: .center)
+                .frame(width: 16, height: 32, alignment: .center)
             
             Spacer()
             
@@ -24,7 +24,7 @@ struct AppBarView: View {
                 .scaledToFit()
                 .frame(width: 20, height: 20, alignment: .center)
             
-            Image(systemName: "line.3.horizontal.decrease.circle")
+            Image(systemName: "line.3.horizontal.decrease")
                 .resizable()
                 .scaledToFit()
                 .frame(width: 20, height: 20, alignment: .center)
