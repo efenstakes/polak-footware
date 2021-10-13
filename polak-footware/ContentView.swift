@@ -10,41 +10,50 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        ScrollView {
-            
-            // app bar
-            AppBarView()
-            
-            // title & filter
-            HStack {
+        
+        NavigationView {
+            ScrollView {
                 
-                Text("Shoes")
-                    .font(.largeTitle)
-                    .fontWeight(.semibold)
+                // app bar
+                AppBarView()
+                
+                // title & filter
+                HStack {
                     
-                Spacer()
+                    Text("Shoes")
+                        .font(.largeTitle)
+                        .fontWeight(.semibold)
+                        
+                    Spacer()
+                    
+                    Text("Sort by")
+                        .font(.caption2)
+                        .bold()
+                    
+                    Image(systemName: "chevron.down")
+                        .resizable()
+                        .frame(width: 10, height: 6, alignment: .center)
+                    
+                }
+                .padding(.horizontal, 16)
+                .padding(.top, 20)
+                .padding(.bottom, -10)
                 
-                Text("Sort by")
-                    .font(.caption2)
-                    .bold()
                 
-                Image(systemName: "chevron.down")
-                    .resizable()
-                    .frame(width: 10, height: 6, alignment: .center)
+                // list of products
+                ForEach (products) { product in
+                    NavigationLink(
+                        destination: ProductDetailsView(product: product)
+                    ) {
+                        ProductCardView(product: product)
+                    }
+                }
+                
                 
             }
-            .padding(.horizontal, 16)
-            .padding(.top, 20)
-            .padding(.bottom, -10)
-            
-            
-            // list of products
-            ForEach (products) { product in
-               ProductCardView(product: product)
-            }
-            
-            
+            .navigationBarHidden(true)
         }
+        
     }
 }
 

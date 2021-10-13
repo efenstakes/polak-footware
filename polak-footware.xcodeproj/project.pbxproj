@@ -17,6 +17,7 @@
 		CE46DDE227160E290042B907 /* AppBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE46DDE127160E290042B907 /* AppBarView.swift */; };
 		CE5ED43A2716FE6C0034BEB4 /* product.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5ED4392716FE6C0034BEB4 /* product.swift */; };
 		CE5ED43C271715EA0034BEB4 /* ProductCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5ED43B271715EA0034BEB4 /* ProductCardView.swift */; };
+		CE5ED43E271721AD0034BEB4 /* ProductDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5ED43D271721AD0034BEB4 /* ProductDetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		CE46DDE127160E290042B907 /* AppBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBarView.swift; sourceTree = "<group>"; };
 		CE5ED4392716FE6C0034BEB4 /* product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = product.swift; sourceTree = "<group>"; };
 		CE5ED43B271715EA0034BEB4 /* ProductCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCardView.swift; sourceTree = "<group>"; };
+		CE5ED43D271721AD0034BEB4 /* ProductDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				CE46DDB827160DD00042B907 /* ContentView.swift */,
 				CE46DDBA27160DD40042B907 /* Assets.xcassets */,
 				CE46DDBC27160DD40042B907 /* Preview Content */,
+				CE5ED43D271721AD0034BEB4 /* ProductDetailsView.swift */,
 			);
 			path = "polak-footware";
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 				CE46DDB727160DD00042B907 /* polak_footwareApp.swift in Sources */,
 				CE46DDE227160E290042B907 /* AppBarView.swift in Sources */,
 				CE5ED43C271715EA0034BEB4 /* ProductCardView.swift in Sources */,
+				CE5ED43E271721AD0034BEB4 /* ProductDetailsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

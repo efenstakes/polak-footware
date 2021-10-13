@@ -11,7 +11,7 @@ struct ProductCardView: View {
     let product: Product;
     
     var body: some View {
-        VStack(alignment: .center, spacing: 8) {
+        VStack(alignment: .center, spacing: 4) {
             
             // image & icon
             ZStack(alignment: .topTrailing) {
@@ -21,6 +21,7 @@ struct ProductCardView: View {
                     .resizable()
                     .scaledToFill()
                     .frame(maxWidth: .infinity)
+                    .frame(maxHeight: 200)
                     .frame(height: 200)
 
                 // icon
@@ -36,18 +37,18 @@ struct ProductCardView: View {
                     .padding(8)
 
             }
-            .frame(height: 200)
             .frame(maxHeight: 200)
+            .frame(height: 200)
             
             // name
             Text(product.name)
-                .font(.subheadline)
+                .font(.title3)
                 .bold()
                 .foregroundColor(.black.opacity(0.8))
             
             // price
             Text("$ \(Int(product.price))")
-                .font(.system(size: 17, weight: .semibold))
+                .font(.system(size: 16, weight: .semibold))
                 .foregroundColor(.black.opacity(0.7))
             
         }
@@ -56,7 +57,7 @@ struct ProductCardView: View {
             height: 280, alignment: .center
         )
         .background(
-            Color.gray.opacity(0.9)
+            Color.gray.opacity(0.1)
         )
         .cornerRadius(16)
         .padding()
