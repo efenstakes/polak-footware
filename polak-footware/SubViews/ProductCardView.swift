@@ -11,19 +11,18 @@ struct ProductCardView: View {
     let product: Product;
     
     var body: some View {
-        VStack(alignment: .center, spacing: 4) {
+        VStack(alignment: .center, spacing: 0) {
             
             // image & icon
             ZStack(alignment: .topTrailing) {
-
+                
                 // image
                 Image(product.image)
-                    .renderingMode(.original)
                     .resizable()
                     .scaledToFill()
                     .frame(maxWidth: .infinity)
-                    .frame(maxHeight: 200)
                     .frame(height: 200)
+                    .frame(maxHeight: 200)
 
                 // icon
                 Image(
@@ -34,25 +33,30 @@ struct ProductCardView: View {
                     .frame(width: 20, height: 20, alignment: .topTrailing)
                     .padding(10)
                     .background(
-                        Circle().fill(.gray.opacity(0.4))
+                        Circle().fill(.white.opacity(0.2))
                     )
-                    .foregroundColor(.gray.opacity(0.7))
-                    .padding(8)
+                    .foregroundColor(.white.opacity(0.7))
+                    .padding(12)
 
             }
+            .clipped()
             .frame(maxHeight: 200)
             .frame(height: 200)
+            .padding(0)
+            .offset(y: -16)
             
             // name
             Text(product.name)
                 .font(.title3)
                 .bold()
                 .foregroundColor(.black.opacity(0.8))
+                .padding(.top, 8)
             
             // price
             Text("$ \(Int(product.price))")
                 .font(.system(size: 16, weight: .semibold))
                 .foregroundColor(.black.opacity(0.7))
+                .padding(.horizontal, 8)
             
         }
         .frame(maxWidth: .infinity)
@@ -60,10 +64,11 @@ struct ProductCardView: View {
             height: 280, alignment: .center
         )
         .background(
-            Color.gray.opacity(0.1)
+            Color.gray.opacity(0.2)
         )
         .cornerRadius(16)
-        .padding()
+        .padding(.horizontal, 20)
+        .padding(.vertical)
         
     }
 }
