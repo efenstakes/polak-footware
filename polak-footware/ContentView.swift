@@ -14,9 +14,6 @@ struct ContentView: View {
         NavigationView {
             ScrollView {
                 
-                // app bar
-                AppBarView()
-                
                 // title & filter
                 HStack {
                     
@@ -36,7 +33,7 @@ struct ContentView: View {
                     
                 }
                 .padding(.horizontal, 16)
-                .padding(.top, 20)
+                .padding(.top, 32)
                 .padding(.bottom, -10)
                 
                 
@@ -51,7 +48,33 @@ struct ContentView: View {
                 
                 
             }
-            .navigationBarHidden(true)
+            .navigationBarTitleDisplayMode(.inline)
+            .navigationBarItems(
+                leading: Image(systemName: "line.3.horizontal")
+                    .resizable()
+                    .frame(width: 18, height: 12, alignment: .center),
+                trailing: HStack(spacing: 20) {
+                    Image(systemName: "magnifyingglass")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 20, height: 20, alignment: .center)
+                    
+                    Image(systemName: "line.3.horizontal.decrease")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 20, height: 20, alignment: .center)
+                    
+                    Text("3")
+                        .font(.caption)
+                        .padding(10)
+                        .foregroundColor(.white)
+                        .background(
+                            Circle().fill(.black.opacity(0.6))
+                        )
+                        .clipShape(Circle())
+                }
+            )
+            
         }
         
     }
